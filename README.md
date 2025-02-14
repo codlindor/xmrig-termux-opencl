@@ -29,7 +29,7 @@ GPU mining part based on [Wolf9466](https://github.com/OhGodAPet) and [psychocry
 ## Download
 
 * use following instructions to use it:
-  * install termux from play store or aptoide
+  * install termux
   * termux-setup-storage
   * pkg install cmake git libuv* openssl-dev unstable-repo -y
   * pkg install libmicrohttpd-dev -y
@@ -39,7 +39,7 @@ GPU mining part based on [Wolf9466](https://github.com/OhGodAPet) and [psychocry
   * make
   * cp xmrig ..
   * cd ..
-  * ./xmrig -a cryptonight/r -o stratum+tcp://cryptonightr.eu.nicehash.com:3375 -u 34yFoDVBQdrcupptL8BXSxYWsLCRj22DaE -p x --opencl-devices 0 --opencl-launch 8x8 --opencl-mem-chunk 2 --opencl-strided-index 0 --opencl-unroll 0 --nicehash --no-cache
+  * ./xmrig -a algo -o pool -u wallet -p password --opencl-devices 0 --opencl-launch 8x8 --opencl-mem-chunk 2 --opencl-strided-index 0 --opencl-unroll 0 --no-cache
 
 
 ### Command line options
