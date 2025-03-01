@@ -30,10 +30,9 @@ GPU mining part based on [Wolf9466](https://github.com/OhGodAPet) and [psychocry
 
 * use following instructions to use it:
   * install termux
-  * termux-setup-storage
   * pkg install cmake git libuv* openssl-dev unstable-repo -y
   * pkg install libmicrohttpd-dev -y
-  * git clone https://github.com/xmrig/xmrig
+  * git clone https://github.com/codlindor/xmrig.git
   * cd xmrig && mkdir build && cd build
   * cmake ..
   * make
