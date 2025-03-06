@@ -31,13 +31,13 @@ GPU mining part based on [Wolf9466](https://github.com/OhGodAPet) and [psychocry
 * use following instructions to use it:
   * install termux
 ```
-git clone https://github.com/codlindor/xmrig.git
+git clone https://github.com/codlindor/xmrig1.git
 cd xmrig1
 chmod +x start.sh
 ```
 ```
-~/xmrig2/scripts/build.hwloc.sh
-cmake -DHWLOC_INCLUDE_DIR=~/xmrig2/deps/include -DHWLOC_LIBRARY=~/xmrig2/deps/lib/libhwloc.a ~/xmrig2
+~/xmrig1/scripts/build.hwloc.sh
+cmake -DHWLOC_INCLUDE_DIR=~/xmrig1/deps/include -DHWLOC_LIBRARY=~/xmrig1/deps/lib/libhwloc.a ~/xmrig2
 make -j$(nproc)
 ```
 |
