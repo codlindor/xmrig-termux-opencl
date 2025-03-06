@@ -30,19 +30,24 @@ GPU mining part based on [Wolf9466](https://github.com/OhGodAPet) and [psychocry
 
 * use following instructions to use it:
   * install termux
-  * pkg install cmake git libuv* openssl-dev unstable-repo -y
-  * pkg install libmicrohttpd-dev -y
-  * git clone https://github.com/codlindor/xmrig.git
-  * cd xmrig && mkdir build && cd build
-  * cmake ..
-  * make
-  * cp xmrig ..
-  * cd ..
-  * ./xmrig -a algo -o pool -u wallet -p password --opencl-devices 0 --opencl-launch 8x8 --opencl-mem-chunk 2 --opencl-strided-index 0 --opencl-unroll 0 --no-cache
+```
+git clone https://github.com/codlindor/xmrig.git
+cd xmrig1
+chmod +x start.sh
+```
+```
+~/xmrig2/scripts/build.hwloc.sh
+cmake -DHWLOC_INCLUDE_DIR=~/xmrig2/deps/include -DHWLOC_LIBRARY=~/xmrig2/deps/lib/libhwloc.a ~/xmrig2
+make -j$(nproc)
+```
+|
 
+
+```
+./xmrig -a algo -o pool -u wallet -p password --opencl-devices 0 --opencl-launch 8x8 --opencl-mem-chunk 2 --opencl-strided-index 0 --opencl-unroll 0 --no-cache
+```
 
 ### Command line options
-```
 -a, --algo=ALGO              specify the algorithm to use
                                  cryptonight
                                  cryptonight-lite
